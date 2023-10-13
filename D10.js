@@ -149,9 +149,20 @@ deletOne("EPICODE", true);
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+const onlyLetters = function(string)
+{
+  const withoutNumbers = string.replace(/\d+/g, "");
+  console.log("Es.5:",withoutNumbers);
+}
+
+onlyLetters("Ciao sono alle 4 con Fabrizio");
+
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+
+
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
