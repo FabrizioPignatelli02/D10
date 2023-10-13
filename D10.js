@@ -659,9 +659,21 @@ const insertNewLi = function()
 
 insertNewLi();
 
+
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+
+const removeAllLiFromMyList = function()
+{
+  const ul = document.getElementById("myList");
+  ul.innerHTML = "";
+}
+
+
+
+removeAllLiFromMyList();
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
