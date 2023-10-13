@@ -259,7 +259,7 @@ const howManyDays = function(day, month, year)
   // console.log(dataOggi);
   const diffTime = dataOggi.getTime()-data.getTime();
   const giorniRimanenti = Math.ceil(diffTime / (100*60*60*24));
-  console.log(giorniRimanenti);
+  console.log("Es.9:",giorniRimanenti);
 }
 
 howManyDays(26,7,2002);
@@ -413,15 +413,15 @@ const movies = [
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
-const deleteProp = function(obj, prop)
-{
-  
-    delete obj.prop;
-    console.log("Es.11:",obj);
+// const deleteProp = function(obj, prop)
+// {
+//     prop=obj.prop;
+//     delete prop;
+//     console.log("Es.11:",obj);
 
-}
+// }
 
-deleteProp(me, "name");
+// deleteProp(me, "surname");
 
 
 
