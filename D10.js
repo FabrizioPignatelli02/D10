@@ -591,17 +591,24 @@ removeIndex(movies, 2);
 */
 const selectId = function(id)
 {
-  const obj = document.getElementById(id);
+  const elementById = document.getElementById(id);
+  return elementById;
 }
 
-selectId("container");
+console.log(selectId("container"));
 
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+const selectTag = function(tag)
+{
+  const elementByTag = document.getElementsByTagName(tag);
+  return elementByTag;
+}
 
-const tdArray = document.getElementsByTagName("td");
+console.log(selectTag("td"));
+
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
