@@ -648,6 +648,17 @@ backGroundColorRedToLink();
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+const insertNewLi = function()
+{
+  const ul = document.getElementById("myList");
+  const li = document.createElement("li");
+  li.innerText="";
+  ul.appendChild(li);
+
+}
+
+insertNewLi();
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
