@@ -632,6 +632,18 @@ innerTextByTag("td");
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+const backGroundColorRedToLink = function()
+{
+  const AllA = document.getElementsByTagName("a");
+  const arrayFormAllElement = Array.from(AllA);
+  for(let i=0; i<arrayFormAllElement.length; i++)
+  {
+    arrayFormAllElement[i].style.backgroundColor = "red";
+  }
+}
+
+backGroundColorRedToLink();
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
