@@ -162,7 +162,21 @@ onlyLetters("Ciao sono alle 4 con Fabrizio");
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+const isThisAnEmail = function(string)
+{
+  const lastPartOfString = string.split("@").pop();
+  // console.log(lastPartOfString);
+  if(lastPartOfString === "gmail.com" || lastPartOfString === "virgilio.it" || lastPartOfString === "libero.it" || lastPartOfString === "hotmail.com")
+  {
+    console.log("Es.6: "+ "La mail", string, "è valida!");
+  }
+  else
+  {
+    console.log("Email errata o inesistente");
+  }
+}
 
+isThisAnEmail("fabrizio@gmail.com");
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
