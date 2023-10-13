@@ -735,10 +735,50 @@ halfTree(3);
 
 */
 
+const tree = function(height)
+{
+  let string = "";
+  for(let i=0; i<height; i++)
+  {
+    string+="*";
+    console.log("Es.28:",string);
+  }
+}
+
+tree(5);
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
+const isItPrime = function(num)
+{
+  if(num === 1)
+  {
+    console.log("Il numero", num, "è primo");
+  }
+  if(num === 2)
+  {
+    console.log("Il numero", num, "è primo");
+  }
+  for(let i=2; i<num; i++)
+  {
+    if(num % i === 0)
+    {
+      console.log("Il numero", num, "NON è primo");
+      break;
+    }
+    else if ( num % i !== 0)
+    {
+      console.log("Il numero", num, "è primo");
+      break;
+    }
+
+  }
+}
+
+
+isItPrime(103);
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
 
