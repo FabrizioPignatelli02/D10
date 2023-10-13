@@ -614,6 +614,18 @@ console.log(selectTag("td"));
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+const innerTextByTag = function(tag)
+{
+  const elementByTag = document.getElementsByTagName(tag);
+  const arrayFromElementByTag = Array.from(elementByTag);
+  for(let i=0; i<arrayFromElementByTag.length; i++)
+  {
+    const textContent = arrayFromElementByTag[i].innerText;
+    console.log("Es.22:",textContent);
+  }
+}
+
+innerTextByTag("td");
 
 
 /* ESERCIZIO 23
