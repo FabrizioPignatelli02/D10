@@ -80,10 +80,10 @@ deleteSkill();
 const dice = function()
 {
   const number = Math.ceil(Math.random()*6);
-  console.log("Es.1:",number);
+  return number;
 }
 
-dice();
+console.log("Es.1:",dice());
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
@@ -226,6 +226,24 @@ whatDayIsIt();
       values: [3, 3, 4]
   }
 */
+
+const rollTheDices = function(times)
+{
+  let   sum = 0;
+  const arrayNumber = [];
+  for(let i=0; i<times; i++)
+  {
+    const number = dice();
+    sum += number;
+    arrayNumber[i]=number;
+  }
+  const estrazioneESomma = new Object();
+  estrazioneESomma.sum = sum;
+  estrazioneESomma.values = arrayNumber;
+  console.log("Es.8:",estrazioneESomma);
+}
+
+rollTheDices(20);
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
