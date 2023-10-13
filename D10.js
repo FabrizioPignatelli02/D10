@@ -123,6 +123,26 @@ splitMe("Ciao sono Fabrizio e ho scelto Epicode");
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
+const deletOne = function(string, boolean)
+{
+  if(boolean === true)
+  {
+    const array = string.split("");
+    array.shift();
+    const newString = array.join("");
+    console.log("Es.4, primo out:", newString);
+  }
+  else
+  {
+    const array = string.split("");
+    array.pop();
+    const newString = array.join("");
+    console.log("Es.4, ultimo out:", newString);
+  }
+}
+
+deletOne("EPICODE", true);
+
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
