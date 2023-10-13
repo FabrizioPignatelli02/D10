@@ -679,6 +679,18 @@ removeAllLiFromMyList();
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+const addClassTestToAllTr = function()
+{
+  const tr = document.getElementsByTagName("tr");
+  const arrayTr = Array.from(tr);
+  for(let i=0; i<arrayTr.length; i++)
+  {
+    arrayTr[i].classList.add("test");
+  }
+}
+
+addClassTestToAllTr();
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
