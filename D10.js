@@ -268,6 +268,29 @@ howManyDays(26,7,2002);
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+const myBirthday = new Date(2002, 7, 26);
+
+const isTodayMyBirthday = function(day, month)
+{
+  const todayDate = new Date();
+  const monthToday = todayDate.getMonth()+1;
+  const dayToday = todayDate.getDate();
+  if(dayToday === day && monthToday === month)
+  {
+    console.log("Es.10: TANTI AUGURI DI BUON COMPLEANNO!!");
+  }
+  else
+  {
+    console.log("Es.10: Mi dispiace, non è il tuo compleanno oggi, niente regali")
+  }
+  // console.log("Giorno oggi:",dayToday);
+  // console.log("Mese oggi:",monthToday);
+  // // console.log(todayDate);
+}
+
+isTodayMyBirthday(26,7);
+// isTodayMyBirthday(13,10);
+
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
