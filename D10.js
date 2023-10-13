@@ -576,6 +576,14 @@ searchAndDivide(movies, "Avengers: Endgame");
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
+const removeIndex = function(array, num)
+{
+  array.splice(num, 1);
+  console.log("Es.19:",array);
+}
+
+removeIndex(movies, 2);
+
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
