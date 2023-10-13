@@ -470,6 +470,21 @@ countMovies(movies);
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
 
+const onlyTheYears = function(array)
+{
+  const arrayYears = [];
+  
+  for(let i=0; i<array.length; i++)
+  {
+    const filmsYear = array[i].Year;
+    arrayYears[i] = filmsYear;
+  }
+
+  console.log("Es.14:",arrayYears);
+}
+
+onlyTheYears(movies);
+
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
