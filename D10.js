@@ -595,7 +595,7 @@ const selectId = function(id)
   return elementById;
 }
 
-console.log(selectId("container"));
+console.log("Es.20:",selectId("container"));
 
 
 /* ESERCIZIO 21
@@ -607,7 +607,7 @@ const selectTag = function(tag)
   return elementByTag;
 }
 
-console.log(selectTag("td"));
+console.log("Es.21:",selectTag("td"));
 
 
 /* ESERCIZIO 22
@@ -639,6 +639,7 @@ const backGroundColorRedToLink = function()
   for(let i=0; i<arrayFormAllElement.length; i++)
   {
     arrayFormAllElement[i].style.backgroundColor = "red";
+    console.log("Es.23:", arrayFormAllElement[i]);
   }
 }
 
@@ -655,9 +656,11 @@ const insertNewLi = function()
   li.innerText="";
   ul.appendChild(li);
 
+  console.log("Es.24:", ul);
+
 }
 
-insertNewLi();
+insertNewLi();  //per vedere i nuovi elementi, commentare linea 680
 
 
 
@@ -669,6 +672,7 @@ const removeAllLiFromMyList = function()
 {
   const ul = document.getElementById("myList");
   ul.innerHTML = "";
+  console.log("Es.25:", ul);
 }
 
 
